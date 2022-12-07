@@ -1,0 +1,27 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "11 Express.js: Note Taker",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckim812/ExpressNoteTaker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ckim812/ExpressNoteTaker/issues"
+  },
+  "homepage": "https://github.com/ckim812/ExpressNoteTaker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

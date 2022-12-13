@@ -12,19 +12,14 @@ router.post("/api/notes", (req, res) => {
   console.log("req.body: ", req.body);
   db.push(req.body);
   console.log("db: ", db);
-  // res.send(db);
-  //   let dbFile = JSON.parse(db);
-  //   console.log(dbFile);
-  //   let newDB = dbFile.push(req);
-  //   console.log(req);
-  //   console.log(newDB);
-  //   res.send(dbFile);
-  fs.writeFile("../db/db.json", JSON.stringify(db), (err) => {
+  let dbString = JSON.stringify(db);
+  console.log("db stringify: ", dbString);
+  fs.writeFile("./db/db.json", dbString, (err) => {
     if (err) {
       console.error(err);
     }
   });
-  console.log("post writefile db: ", db);
+  console.log("post writefile db: ", JSON.parse(dbString));
   //   res.send(db);
 });
 

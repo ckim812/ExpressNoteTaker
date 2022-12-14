@@ -4,13 +4,14 @@
   "description": "11 Express.js: Note Taker",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon",
+    "watch": "nodemon",
     "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "heroku": "^7.67.1"
   },
   "repository": {
     "type": "git",

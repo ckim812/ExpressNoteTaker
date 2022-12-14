@@ -21,8 +21,26 @@ router.post("/api/notes", (req, res) => {
   });
 
   res.send(db);
+});
 
-  console.log(req);
+router.delete("/api/notes/:id", (req, res) => {
+  const { id } = req.params; //destructure req.params to get id# from clicked note
+
+  //loop through objects to find and delete the one with a specific id#
+  for (let i = 0; i < db.length; i++) {
+    const note = db[i];
+    if (note.id === id) {
+      db.splice(i, 1);
+    }
+
+    //replace db without deleted note
+    fs.writeFile("./db/db.json", JSON.stringify(db), (err) => {
+      if (err) {
+        console.error(err);
+      }
+    });
+    res.send(db);
+  }
 });
 
 module.exports = router;

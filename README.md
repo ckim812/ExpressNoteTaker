@@ -47,7 +47,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Usage
 
 ```
-Type in location you would like to know the 5 day forcast for. 5-day forcast will be shown and searched location will be saved. If you press the button that dynamically forms, you can get the 5-day forcast.
+Click "Get Started". Where it says "Note Title", type in the title of your note. Where it says "Note Text", type in your note. Once both fields have been completed, press the save button on the top right corner and your note will be saved. Saved notes will appear on the bar on the left side. You may click on saved notes to see the title and text of the note on the right side. If you would like to delete a note, press the red trash. If you would like to create a new note, press the white plus button on the top right.
+
 ```
 
 ![alt text](./Assets/11-express-homework-demo-01.png)
